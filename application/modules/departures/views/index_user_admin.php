@@ -39,9 +39,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <a class="btn btn-app bg-olive" href="<?php echo site_url('admin/departures/add'); ?>">
                 <i class="fa fa-plus"></i> Add / Create
               </a>
-              <a class="btn btn-app bg-olive" href="<?php echo site_url('admin/departures/import'); ?>">
+             <!--  <a class="btn btn-app bg-olive" href="<?php echo site_url('admin/departures/import'); ?>">
                 <i class="fa fa-plus"></i> Import
-              </a>
+              </a> -->
             </div>
 
             <div id="usersTable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
