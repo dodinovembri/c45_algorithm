@@ -128,16 +128,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <!-- /.box-header -->
 
             <div class="box-body">
-                  <table id="usersTable" class="table table-bordered table-striped dataTable">
+                  <table >
                     <thead>
                       <tr>
-                        <th>Airlines</th>
+                       <!--  <th>Airlines</th>
                         <th>Flight No</th>
                         <th>Schedule Time</th>
                         <th>Airport</th>
                         <th>Type</th>
-                        <th>Date</th>
-                        <th>Delay</th>
+                        <th>Date</th> -->
+                        <th>Delay ?</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -145,28 +145,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     foreach ($dt_users as $dt)
                     {
                       echo '<tr>' .PHP_EOL;
-                        echo '<td>'.$dt['airlines'].'</td>' .PHP_EOL;
-                        echo '<td>'.$dt['flight_no'].'</td>' .PHP_EOL;
-                        echo '<td>'.date("H:i", strtotime($dt['schedule_time'])).'</td>' .PHP_EOL;
-                        echo '<td>'.$dt['airport'].'</td>' .PHP_EOL;
-                        echo '<td>'.$dt['type'].'</td>' .PHP_EOL;
-                        echo '<td>'.$dt['tanggal'].'</td>' .PHP_EOL;
+                        // echo '<td>'.$dt['airlines'].'</td>' .PHP_EOL;
+                        // echo '<td>'.$dt['flight_no'].'</td>' .PHP_EOL;
+                        // echo '<td>'.date("H:i", strtotime($dt['schedule_time'])).'</td>' .PHP_EOL;
+                        // echo '<td>'.$dt['airport'].'</td>' .PHP_EOL;
+                        // echo '<td>'.$dt['type'].'</td>' .PHP_EOL;
+                        // echo '<td>'.$dt['tanggal'].'</td>' .PHP_EOL;
                         echo '<td>'.$dt['status'].'</td>' .PHP_EOL;
                       echo '</tr>' .PHP_EOL;
                     }
                      ?>                      
                     </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>Airlines</th>
+                    <!-- <tfoot> -->
+                      <!-- <tr> -->
+                        <!-- <th>Airlines</th>
                         <th>Flight No</th>
                         <th>Schedule Time</th>
                         <th>Airport</th>
                         <th>Type</th>
-                        <th>Date</th>
-                        <th>Delay</th>
-                      </tr>
-                    </tfoot>
+                        <th>Date</th> -->
+                      <!--   <th>Delay</th>
+                      </tr> -->
+                    <!-- </tfoot> -->
                   </table>
                 </div>
               </div>
