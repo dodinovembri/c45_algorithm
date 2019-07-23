@@ -13,16 +13,16 @@ class Departures_model extends CI_Model
                 'schedule_time' => $dataarray[$i]['schedule_time'],
                 'airport' => $dataarray[$i]['airport'],
                 'type' => $dataarray[$i]['type'],
-                'date' => $dataarray[$i]['date'],
+                'tanggal' => $dataarray[$i]['date'],
                 'status' => $dataarray[$i]['status']
             );
 
 
-            $this->db->insert('users_groups', $data);
+            $this->db->insert('data_survey', $data);
 
-            }
+            
 
         }
-    }
 
+    }
 }

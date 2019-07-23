@@ -151,10 +151,10 @@ class Departures_admin extends Admin_Controller
    
         // display the create user form
         // set the flash data error message if there is one
-        $data['page_title'] = 'Impor Pegawai';
-        $data['page_description'] = 'Form Impor Pegawai';
+        $data['page_title'] = 'Impor Departures';
+        $data['page_description'] = 'Form Impor Departures';
         
-        $this->template->_render_admin('add_import_pegawai', $data);
+        $this->template->_render_admin('add_import_departures', $data);
     }
 
     /**
