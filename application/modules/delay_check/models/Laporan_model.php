@@ -325,31 +325,31 @@ class Laporan_model extends CI_Model
         $query = "TRUNCATE pohon_keputusan_c45";
         $result = $this->db->query($query);     
 
-        $query = "TRUNCATE attribute";
-        $result = $this->db->query($query);    
+        // $query = "TRUNCATE attribute";
+        // $result = $this->db->query($query);    
 
-        $query = "INSERT INTO `attribute` (`attribute`, `nilai_attribute`) VALUES
-                ('total', 'total'),
-                ('delay', 'Ya'),
-                ('delay', 'Tidak'),
-                ('type', 'Arrival'),
-                ('type', 'Departure'),
-                ('airport', 'BDO'),
-                ('airport', 'BKS'),
-                ('airport', 'BTH'),
-                ('airport', 'CGK'),
-                ('airport', 'DJB'),
-                ('airport', 'DPS'),
-                ('airport', 'HLP'),
-                ('airlines', 'GARUDA'),
-                ('airlines', 'BATIK AIR'),
-                ('airlines', 'LION AIR'),
-                ('airlines', 'NAM AIR'),
-                ('airlines', 'SRIWIJAYA AIR'),
-                ('airlines', 'EXPRESS AIR'),
-                ('airlines', 'CITILINK'),
-                ('airlines', 'AIRASIA'),
-                ('airlines', 'SILKAIR');";
+        // $query = "INSERT INTO `attribute` (`attribute`, `nilai_attribute`) VALUES
+        //         ('total', 'total'),
+        //         ('delay', 'Ya'),
+        //         ('delay', 'Tidak'),
+        //         ('type', 'Arrival'),
+        //         ('type', 'Departure'),
+        //         ('airport', 'BDO'),
+        //         ('airport', 'BKS'),
+        //         ('airport', 'BTH'),
+        //         ('airport', 'CGK'),
+        //         ('airport', 'DJB'),
+        //         ('airport', 'DPS'),
+        //         ('airport', 'HLP'),
+        //         ('airlines', 'GARUDA'),
+        //         ('airlines', 'BATIK AIR'),
+        //         ('airlines', 'LION AIR'),
+        //         ('airlines', 'NAM AIR'),
+        //         ('airlines', 'SRIWIJAYA AIR'),
+        //         ('airlines', 'EXPRESS AIR'),
+        //         ('airlines', 'CITILINK'),
+        //         ('airlines', 'AIRASIA'),
+        //         ('airlines', 'SILKAIR');";
         $result = $this->db->query($query);    
 
     }

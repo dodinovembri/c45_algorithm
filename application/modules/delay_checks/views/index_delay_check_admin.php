@@ -137,48 +137,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <th>Airport</th>
                         <th>Type</th>
                         <th>Date</th> -->
-                        <!-- <th>Delay ?</th> -->
+                        <th>Delay ?</th>
                       </tr>
                     </thead>
                     <tbody>
                     <?php 
                     foreach ($dt_users as $dt)
                     {
-                      // echo '<tr>' .PHP_EOL;
+                      echo '<tr>' .PHP_EOL;
                         // echo '<td>'.$dt['airlines'].'</td>' .PHP_EOL;
                         // echo '<td>'.$dt['flight_no'].'</td>' .PHP_EOL;
                         // echo '<td>'.date("H:i", strtotime($dt['schedule_time'])).'</td>' .PHP_EOL;
                         // echo '<td>'.$dt['airport'].'</td>' .PHP_EOL;
                         // echo '<td>'.$dt['type'].'</td>' .PHP_EOL;
                         // echo '<td>'.$dt['tanggal'].'</td>' .PHP_EOL;
-                        // echo '<td>'.$dt['status'].'</td>' .PHP_EOL; 
-                        ?>
-
-                         <div class="row">
-                          <div class="col-md-12">
-                            <div class="box box-default">
-                              <div class="box-header with-border">
-                                <i class="fa fa-warning"></i>
-
-                                <h3 class="box-title">Delay ?</h3>
-                              </div>
-                              <!-- /.box-header -->
-                              <div class="box-body">
-                                <div class="alert alert-warning alert-dismissible">
-                                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                  <h4><i class="icon fa fa-ban"></i> </h4>
-                                  Informasi Penerbangan dengan data tersebut Adalah <br>
-                                  Status Delay :  <span style="color: black"><u><?php echo $dt['status']; ?></u></span> 
-                                </div>                                
-                              </div>
-                              <!-- /.box-body -->
-                            </div>
-                            <!-- /.box -->
-                          </div>
-                        </div>
-                          <!-- /.col -->
-<?php
-                      // echo '</tr>' .PHP_EOL;
+                        echo '<td>'.$dt['status'].'</td>' .PHP_EOL;
+                      echo '</tr>' .PHP_EOL;
                     }
                      ?>                      
                     </tbody>

@@ -42,9 +42,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <a class="btn btn-app" href="<?php echo site_url('admin/laporan/perhitungan'); ?>">
                 <i class="fa fa-calculator"></i> Perhitungan C45
               </a>
-              <a class="btn btn-app" href="<?php echo site_url('admin/laporan/keputusan'); ?>">
-                <i class="fa fa-tree"></i> Pohon keputusan C45
-              </a>              
+              <div class="btn btn-app">
+                <i class="fa fa-tree"></i>
+                <?php echo anchor('admin/laporan/keputusan/','Pohon keputusan C45', array('target' => '_blank')); ?>                
+
+              </div>              
             </div>
           </div>
           <!-- /.box-body -->
