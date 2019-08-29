@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         if(empty($nav['nav_child']))
         {
           if($this->ion_auth->is_admin()) {
-            if($nav['nav_menu_module'] == 'departures' || $nav['nav_menu_module'] == 'arrivals' || $nav['nav_menu_module'] == 'delay_check' || $nav['nav_menu_module'] == 'dashboard'  || $nav['nav_menu_module'] == 'data'  ) {
+            if($nav['nav_menu_module'] == 'departures' || $nav['nav_menu_module'] == 'arrivals' || $nav['nav_menu_module'] == 'delay_check' || $nav['nav_menu_module'] == 'dashboard'  || $nav['nav_menu_module'] == 'data' || $nav['nav_menu_module'] == 'laporan_terbanyak' ) {
               echo '<li class="'.$nav['active_link'].'"><a href="'.(($nav['nav_menu_link'] == '#') ? '#' : site_url('admin/'.$nav['nav_menu_link'])).'"><i class="'.$nav['nav_menu_icon'].'"></i> <span>'.$nav['nav_menu_name'].'</span></a></li>' .PHP_EOL;
             } 
           } else if($this->ion_auth->in_group('5')){
@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               echo '<li class="'.$nav['active_link'].'"><a href="'.(($nav['nav_menu_link'] == '#') ? '#' : site_url('admin/'.$nav['nav_menu_link'])).'"><i class="'.$nav['nav_menu_icon'].'"></i> <span>'.$nav['nav_menu_name'].'</span></a></li>' .PHP_EOL;
             }
           } else if($this->ion_auth->in_group('4')){
-            if($nav['nav_menu_module'] == 'dashboard' || $nav['nav_menu_module'] == 'laporan'|| $nav['nav_menu_module'] == 'data' ) {
+            if($nav['nav_menu_module'] == 'dashboard' || $nav['nav_menu_module'] == 'laporan'|| $nav['nav_menu_module'] == 'data'  || $nav['nav_menu_module'] == 'laporan_terbanyak' ) {
               echo '<li class="'.$nav['active_link'].'"><a href="'.(($nav['nav_menu_link'] == '#') ? '#' : site_url('admin/'.$nav['nav_menu_link'])).'"><i class="'.$nav['nav_menu_icon'].'"></i> <span>'.$nav['nav_menu_name'].'</span></a></li>' .PHP_EOL;
             }
           } else if($this->ion_auth->in_group('3')){
